@@ -9,7 +9,7 @@ The project explores:
 - Designing heuristics that improve agent performance in 2048.
 
 # Key Files
--multi_agents.py – Implementations of ReflexAgent, MinimaxAgent, AlphaBetaAgent, and ExpectimaxAgent.  
+multi_agents.py – Implementations of ReflexAgent, MinimaxAgent, AlphaBetaAgent, and ExpectimaxAgent.  
 2048.py – Main driver for running the 2048 game with different agents.  
 game_state.py – Defines the GameState class for 2048.  
 game.py – Core game logic, including Agent and Action definitions.  
@@ -59,5 +59,5 @@ With __AlphaBetaAgent__ (depth 2), this heuristic consistently produced scores a
 - __ExpectimaxAgent__ – Models randomness more effectively; less pessimistic than minimax. In practice, it outperforms AlphaBetaAgent, often achieving 1024 about half the time.
 - __BetterEvaluationFunction__ – With Expectimax or AlphaBeta at depth 2, this heuristic significantly improves performance, achieving average scores >7000 and reaching 2048 in many runs.
 
-__Takeaways:__
+__Takeaways:__  
 These results highlight the importance of both search strategy and evaluation design. While pruning improves efficiency, realistic modeling of randomness (Expectimax) combined with a strong evaluation function delivers the best overall performance.
