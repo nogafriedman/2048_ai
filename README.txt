@@ -1,4 +1,4 @@
-# Multi-Agent Search in 2048
+#Multi-Agent Search in 2048
 
 This project was developed as part of the Introduction to Artificial Intelligence course.
 It implements intelligent agents for the game 2048, focusing on multi-agent search algorithms and the design of effective evaluation functions.
@@ -8,7 +8,7 @@ The project explores:
 - Understanding the role of randomness in decision-making.
 - Designing heuristics that improve agent performance in 2048.
 
-# Key Files
+#Key Files
 -multi_agents.py – Implementations of ReflexAgent, MinimaxAgent, AlphaBetaAgent, and ExpectimaxAgent.  
 2048.py – Main driver for running the 2048 game with different agents.  
 game_state.py – Defines the GameState class for 2048.  
@@ -17,7 +17,7 @@ util.py – Supporting data structures.
 __Graphics and support files__ (not modified):
 graphics_display.py, game_grid.py, game2048_grid.py, displays.py, keyboard_agents.py.
 
-# How to Run
+#How to Run
 __Play 2048 manually:__  
 python3 2048.py
 
@@ -40,7 +40,7 @@ python3 2048.py --agent=ExpectimaxAgent --depth=2 --num_of_games=10 --display=Su
 __Run with custom evaluation function:__
 python3 2048.py --agent=AlphaBetaAgent --depth=2 --evaluation_function=better --num_of_games=5
 
-# Evaluation Function Design
+#Evaluation Function Design
 The betterEvaluationFunction was designed to capture the characteristics of successful 2048 play using a linear combination of features:
 - __Maximum tile value__ – encourages building toward 2048 and beyond.
 - __Monotonicity__ – rewards boards with values increasing along rows/columns, which supports stable merging.
@@ -51,7 +51,7 @@ The betterEvaluationFunction was designed to capture the characteristics of succ
 Weights were chosen empirically to balance survival (empty cells, smoothness) and progress toward high tiles (max tile, monotonicity).
 With __AlphaBetaAgent__ (depth 2), this heuristic consistently produced scores above 7000 and frequently reached the 1024 tile or higher.
 
-# Results and Observations
+#Results and Observations
 
 - __ReflexAgent__ – Performs poorly; typically stalls at 256, occasionally 512.
 - __MinimaxAgent__ – Plays optimally against worst-case responses, but performance degrades due to high branching factor. Depth 2 search is feasible; depth 3 is too slow.
