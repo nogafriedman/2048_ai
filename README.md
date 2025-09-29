@@ -9,13 +9,13 @@ The project explores:
 - Designing heuristics that improve agent performance in 2048.
 
 # Key Files
-multi_agents.py – Implementations of ReflexAgent, MinimaxAgent, AlphaBetaAgent, and ExpectimaxAgent.  
-2048.py – Main driver for running the 2048 game with different agents.  
-game_state.py – Defines the GameState class for 2048.  
-game.py – Core game logic, including Agent and Action definitions.  
-util.py – Supporting data structures.  
+```multi_agents.py``` – Implementations of ReflexAgent, MinimaxAgent, AlphaBetaAgent, and ExpectimaxAgent.  
+```2048.py``` – Main driver for running the 2048 game with different agents.  
+```game_state.py``` – Defines the GameState class for 2048.  
+```game.py``` – Core game logic, including Agent and Action definitions.  
+```util.py``` – Supporting data structures.  
 __Graphics and support files__ (not modified):
-graphics_display.py, game_grid.py, game2048_grid.py, displays.py, keyboard_agents.py.
+```graphics_display.py```, ```game_grid.py```, ```game2048_grid.py```, ```displays.py```, ```keyboard_agents.py```.
 
 # How to Run
 __Play 2048 manually:__   
