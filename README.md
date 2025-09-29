@@ -18,26 +18,26 @@ __Graphics and support files__ (not modified):
 graphics_display.py, game_grid.py, game2048_grid.py, displays.py, keyboard_agents.py.
 
 # How to Run
-__Play 2048 manually:__  
+__Play 2048 manually:__   
 python3 2048.py
 
-__Run ReflexAgent:__  
-python3 2048.py --agent=ReflexAgent
+__Run ReflexAgent:__   
+python3 2048.py --agent=ReflexAgent  
 python3 2048.py --agent=ReflexAgent --num_of_games=10 --display=SummaryDisplay
 
 __Run MinimaxAgent:__  
-python3 2048.py --agent=MinmaxAgent --depth=1 --random_seed=1 --initial_board=test_layout.txt
+python3 2048.py --agent=MinmaxAgent --depth=1 --random_seed=1 --initial_board=test_layout.txt  
 python3 2048.py --agent=MinmaxAgent --depth=2
 
-__Run AlphaBetaAgent:__
-python3 2048.py --agent=AlphaBetaAgent --depth=2
+__Run AlphaBetaAgent:__  
+python3 2048.py --agent=AlphaBetaAgent --depth=2  
 python3 2048.py --agent=AlphaBetaAgent --depth=2 --num_of_games=10 --display=SummaryDisplay
 
-__Run ExpectimaxAgent:__
-python3 2048.py --agent=ExpectimaxAgent --depth=2
+__Run ExpectimaxAgent:__  
+python3 2048.py --agent=ExpectimaxAgent --depth=2  
 python3 2048.py --agent=ExpectimaxAgent --depth=2 --num_of_games=10 --display=SummaryDisplay
 
-__Run with custom evaluation function:__
+__Run with custom evaluation function:__  
 python3 2048.py --agent=AlphaBetaAgent --depth=2 --evaluation_function=better --num_of_games=5
 
 # Evaluation Function Design
