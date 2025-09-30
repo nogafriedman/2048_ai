@@ -63,3 +63,5 @@ With __AlphaBetaAgent__ (depth 2), this heuristic consistently produced scores a
 
 __Takeaways:__  
 These results highlight the importance of both search strategy and evaluation design. While pruning improves efficiency, realistic modeling of randomness (Expectimax) combined with a strong evaluation function delivers the best overall performance.
+
+<img width="1173" height="553" alt="Image" src="https://github.com/user-attachments/assets/504ffdde-a75c-45d2-9f0f-7725c4db7738" />
