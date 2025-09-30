@@ -62,6 +62,7 @@ With __AlphaBetaAgent__ (depth 2), this heuristic consistently produced scores a
 - __BetterEvaluationFunction__ – With Expectimax or AlphaBeta at depth 2, this heuristic significantly improves performance, achieving average scores >7000 and reaching 2048 in many runs.
 
 <img src="https://github.com/user-attachments/assets/504ffdde-a75c-45d2-9f0f-7725c4db7738" alt="Image" width="700" />  
+
 (AlphaBetaAgent depth=2 with BetterEvaluationFunction, n=5 summary)  
 
 __Takeaways:__  
