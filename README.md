@@ -8,6 +8,8 @@ The project explores:
 - Understanding the role of randomness in decision-making.
 - Designing heuristics that improve agent performance in 2048.
 
+<img src="https://github.com/user-attachments/assets/58e96880-441f-4f53-93af-2d7eed436ba2" alt="Image" width="300" />
+
 # Key Files
 ```multi_agents.py``` – Implementations of ReflexAgent, MinimaxAgent, AlphaBetaAgent, and ExpectimaxAgent.  
 ```2048.py``` – Main driver for running the 2048 game with different agents.  
