@@ -73,4 +73,4 @@ With __AlphaBetaAgent__ (depth 2), this heuristic consistently produced scores a
 __Takeaways:__  
 With betterEvaluationFunction at depth 2, AlphaBeta achieves about 80% win rate, often reaching 2048 and averaging well over 7000 points. Expectimax, by contrast, failed to win any of the runs, typically stalling at 1024. This shows that the synergy between pruning and a strong heuristic can outweigh probabilistic modeling at shallow depths, making AlphaBeta the stronger choice in practice.
 
-<img src="https://github.com/user-attachments/assets/df399bd6-1e09-4faf-8c27-88279d76a151" alt="Results details" width="400" />
+<img src="https://github.com/user-attachments/assets/df399bd6-1e09-4faf-8c27-88279d76a151" alt="Results details" width="300" />
