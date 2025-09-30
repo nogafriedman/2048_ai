@@ -61,8 +61,8 @@ With __AlphaBetaAgent__ (depth 2), this heuristic consistently produced scores a
 - __ExpectimaxAgent__ – Models randomness more effectively; less pessimistic than minimax. In practice, it outperforms AlphaBetaAgent, often achieving 1024 about half the time.
 - __BetterEvaluationFunction__ – With Expectimax or AlphaBeta at depth 2, this heuristic significantly improves performance, achieving average scores >7000 and reaching 2048 in many runs.
 
-BetterEvaluationFunction Agent performance summary over 5 games:
 <img src="https://github.com/user-attachments/assets/504ffdde-a75c-45d2-9f0f-7725c4db7738" alt="Image" width="700" />  
+(AlphaBetaAgent depth=2 with BetterEvaluationFunction, n=5 summary)  
 
 __Takeaways:__  
 These results highlight the importance of both search strategy and evaluation design. While pruning improves efficiency, realistic modeling of randomness (Expectimax) combined with a strong evaluation function delivers the best overall performance.
