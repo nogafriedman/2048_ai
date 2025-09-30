@@ -59,11 +59,16 @@ With __AlphaBetaAgent__ (depth 2), this heuristic consistently produced scores a
 - __MinimaxAgent__ – Plays optimally against worst-case responses, but performance degrades due to high branching factor. Depth 2 search is feasible; depth 3 is too slow.
 - __AlphaBetaAgent__ – Matches Minimax in strength but runs faster thanks to pruning. Typically reaches 512, sometimes 1024.
 - __ExpectimaxAgent__ – Models randomness more effectively; less pessimistic than minimax. In practice, it outperforms AlphaBetaAgent, often achieving 1024 about half the time.
-- __BetterEvaluationFunction__ – With Expectimax or AlphaBeta at depth 2, this heuristic significantly improves performance, achieving average scores >7000 and reaching 2048 in many runs.
+- __BetterEvaluationFunction__ – At depth 2, this heuristic greatly boosts AlphaBeta’s performance, with average scores significantly above 7000 and frequent 2048 tiles. Expectimax also benefits, though the improvement is less pronounced.
 
-<img src="https://github.com/user-attachments/assets/504ffdde-a75c-45d2-9f0f-7725c4db7738" alt="Image" width="700" />  
+<img src="https://github.com/user-attachments/assets/2306547f-ebe3-4954-b03a-a51a5a05efd3" alt="AlphaBeta Results" width="700" />
 
 (AlphaBetaAgent depth=2 with BetterEvaluationFunction, n=5 summary)  
 
+<img src="https://github.com/user-attachments/assets/a805d295-66aa-42df-9d77-33ca9e19d9c0" alt="Expectimax Results" width="700" />  
+
+(ExpectimaxAgent depth=2 with BetterEvaluationFunction, n=5 summary)  
+
+
 __Takeaways:__  
-These results highlight the importance of both search strategy and evaluation design. While pruning improves efficiency, realistic modeling of randomness (Expectimax) combined with a strong evaluation function delivers the best overall performance.
+With betterEvaluationFunction at depth 2, AlphaBeta achieves about 80% win rate, often reaching 2048 and averaging well over 7000 points. Expectimax, by contrast, failed to win any of the runs, typically stalling at 1024. This shows that the synergy between pruning and a strong heuristic can outweigh probabilistic modeling at shallow depths, making AlphaBeta the stronger choice in practice.
